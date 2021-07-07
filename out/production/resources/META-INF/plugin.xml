@@ -1,0 +1,41 @@
+<idea-plugin>
+    <id>csu.edu</id>
+    <name>api_-misuse_-detection</name>
+    <vendor email="xxxxx@163.com" url="http://www.xxx.com">xxxxCompany</vendor>
+
+    <description><![CDATA[
+    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.<br>
+    <em>xxxxxxx</em>
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <localInspection language="JAVA"
+                         displayName="Method arg constraint violated"
+                         groupPath="Java"
+                         groupBundle="messages.InspectionsBundle"
+                         groupKey="group.names.probable.bugs"
+                         enabledByDefault="true"
+                         level="ERROR"
+                         implementationClass="inspection.CallOrderInspection"/>
+        <localInspection language="JAVA"
+                         displayName="Method arg constraint violated"
+                         groupPath="Java"
+                         groupBundle="messages.InspectionsBundle"
+                         groupKey="group.names.probable.bugs"
+                         enabledByDefault="true"
+                         level="ERROR"
+                         implementationClass="inspection.StateCheckingInspection"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+    <version/>
+</idea-plugin>

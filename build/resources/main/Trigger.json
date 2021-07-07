@@ -1,0 +1,37 @@
+[
+  {
+  "segments": [
+    {
+      "start": {
+        "identity": 23,
+        "labels": [
+          "method"
+        ],
+        "properties": {
+          "className" : "android.os.Environment",
+          "name": "getExternalStorageState"
+        }
+      },
+      "relationship": {
+        "identity": 17,
+        "start": 23,
+        "end": 24,
+        "type": "trigger",
+        "properties": {
+          "description": "getExternalStorageState() may throw NullPointerException, so NullPointerException should be catch"
+        }
+      },
+      "end": {
+        "identity": 24,
+        "labels": [
+          "class"
+        ],
+        "properties": {
+          "name": "java.lang.NullPointerException"
+        }
+      }
+    }
+  ],
+    "length": 1.0
+  }
+]

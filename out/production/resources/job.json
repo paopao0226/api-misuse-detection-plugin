@@ -1,0 +1,32 @@
+{
+  "segments": [
+    {
+      "start": {
+        "identity": 3,
+        "labels": ["method"],
+        "properties": {
+          "className": "java.io.InputStream",
+          "name": "read"
+        }
+      },
+      "relationship": {
+        "identity": 2,
+        "start": 3,
+        "end": 1,
+        "type": "c_o",
+        "properties": {
+          "value": "follow",
+          "description": "InputStream.close() should be called after finished using the stream.\n  The particular stream is passed to QValueFactoryImpl.create() as a parameter, but\n  should be closed by the method, as defined in its contract."
+        }
+      },
+      "end": {
+        "identity": 1,
+        "labels": ["method"],
+        "properties": {
+          "className": "java.io.InputStream",
+          "name": "close"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="com.microsoft.z3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../z3-4.8.10-x64-win/bin/com.microsoft.z3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,38 @@
+[
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 17,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "com.google.javascript.rhino.jstype.UnionType.Builder",
+            "name": "build"
+          }
+        },
+        "relationship": {
+          "identity": 13,
+          "start": 17,
+          "end": 18,
+          "type": "r_c",
+          "properties": {
+            "description": "UnionTypeBuilder.build() returns a JSType that can never be null"
+          }
+        },
+        "end": {
+          "identity": 18,
+          "labels": [
+            "value"
+          ],
+          "properties": {
+            "className": "com.google.javascript.rhino.jstype.JSType",
+            "name": "null"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  }
+]

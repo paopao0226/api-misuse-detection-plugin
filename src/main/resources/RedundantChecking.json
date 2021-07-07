@@ -1,0 +1,771 @@
+[{
+  "segments": [
+    {
+      "start": {
+        "identity": 17,
+        "labels": [
+          "method"
+        ],
+        "properties": {
+          "className": "com.google.javascript.rhino.jstype.UnionTypeBuilder",
+          "name": "com.google.javascript.rhino.jstype.UnionTypeBuilder.build()"
+        }
+      },
+      "relationship": {
+        "identity": 13,
+        "start": 17,
+        "end": 18,
+        "type": "r_c",
+        "properties": {
+          "description": "UnionTypeBuilder.build() returns a JSType that can never be null"
+        }
+      },
+      "end": {
+        "identity": 18,
+        "labels": [
+          "value"
+        ],
+        "properties": {
+          "name": "null"
+        }
+      }
+    }
+  ],
+  "length": 1.0
+},
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 17,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "java.lang.Boolean",
+            "name": "java.lang.Boolean.getBoolean(String name)"
+          }
+        },
+        "relationship": {
+          "identity": 13,
+          "start": 17,
+          "end": 18,
+          "type": "r_c",
+          "properties": {
+            "description": "Boolean.parseBoolean() turns a string to a boolean, while Boolean.getBoolean() looks up the boolean value of a system property. The latter method was called here, where it should have been the former."
+          }
+        },
+        "end": {
+          "identity": 18,
+          "labels": [
+            "value"
+          ],
+          "properties": {
+            "name": "null"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 22,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "javax.crypto.Cipher",
+            "name": "javax.crypto.Cipher.getInstance(String transformation)"
+          }
+        },
+        "relationship": {
+          "identity": 15,
+          "start": 22,
+          "end": 20,
+          "type": "d_c",
+          "properties": {
+            "description": "May call `init()` multiple times on the same Cipher instance"
+          }
+        },
+        "end": {
+          "identity": 20,
+          "labels": [
+            "class"
+          ],
+          "properties": {
+            "name": "MultiTimesCalling"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 25,
+          "labels": [
+            "class"
+          ],
+          "properties": {
+            "className": "java.util.HashMap",
+            "name": "java.util.HashMap"
+          }
+        },
+        "relationship": {
+          "identity": 18,
+          "start": 25,
+          "end": 27,
+          "type": "sy_c",
+          "properties": {
+            "description":"Synchronizes on an object and then again on the same object within the synchroized bock, thereby, producing a deadlock."
+          }
+        },
+        "end": {
+          "identity": 27,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "name": "synchronized()"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 25,
+          "labels": [
+            "class"
+          ],
+          "properties": {
+            "className": "java.lang.String",
+            "name": "java.lang.String"
+          }
+        },
+        "relationship": {
+          "identity": 18,
+          "start": 25,
+          "end": 27,
+          "type": "r_c",
+          "properties": {
+            "description":"An encrypted message is decrypted and then converted back to a string, without\n  specifying an explicit encoding. The fix specifies the encoding \"UTF-8\"."
+          }
+        },
+        "end": {
+          "identity": 27,
+          "labels": [
+            "value"
+          ],
+          "properties": {
+            "name": "UTF8"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 22,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "javax.crypto.Mac",
+            "name": "javax.crypto.Mac.doFinal(byte[] input)"
+          }
+        },
+        "relationship": {
+          "identity": 15,
+          "start": 22,
+          "end": 20,
+          "type": "r_c",
+          "properties": {
+            "description": "Exports bytes for Mac.doFinal() without specifying the encoding."
+          }
+        },
+        "end": {
+          "identity": 20,
+          "labels": [
+            "value"
+          ],
+          "properties": {
+            "name": "UTF8"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 25,
+          "labels": [
+            "class"
+          ],
+          "properties": {
+            "className": "java.lang.String",
+            "name": "java.lang.String.getBytes(String charsetName)"
+          }
+        },
+        "relationship": {
+          "identity": 18,
+          "start": 25,
+          "end": 27,
+          "type": "r_c",
+          "properties": {
+            "description":"A string is converted to bytes without specifying an explicit encoding.The bytes are then passed to Cipher.doFinal(). The fix specifies the encoding \"UTF-8\"."
+          }
+        },
+        "end": {
+          "identity": 27,
+          "labels": [
+            "value"
+          ],
+          "properties": {
+            "name": "UTF8"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 25,
+          "labels": [
+            "class"
+          ],
+          "properties": {
+            "className": "java.lang.String",
+            "name": "java.lang.String.getBytes(String charsetName)"
+          }
+        },
+        "relationship": {
+          "identity": 18,
+          "start": 25,
+          "end": 27,
+          "type": "r_c",
+          "properties": {
+            "description":"A string is converted to bytes without specifying an explicit encoding.The bytes are then passed to Cipher.doFinal(). The fix specifies the encoding \"UTF-8\"."
+          }
+        },
+        "end": {
+          "identity": 27,
+          "labels": [
+            "value"
+          ],
+          "properties": {
+            "name": "UTF8"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 25,
+          "labels": [
+            "class"
+          ],
+          "properties": {
+            "className": "java.lang.String",
+            "name": "java.lang.String.getBytes(String charsetName)"
+          }
+        },
+        "relationship": {
+          "identity": 18,
+          "start": 25,
+          "end": 27,
+          "type": "r_c",
+          "properties": {
+            "description":"A string is converted to bytes without specifying an explicit encoding.The bytes are then passed to Cipher.doFinal(). The fix specifies the encoding \"UTF-8\"."
+          }
+        },
+        "end": {
+          "identity": 27,
+          "labels": [
+            "value"
+          ],
+          "properties": {
+            "name": "UTF8"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 22,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "javax.crypto.Cipher",
+            "name": "javax.crypto.Cipher.init(int opmode, Key key)"
+          }
+        },
+        "relationship": {
+          "identity": 15,
+          "start": 22,
+          "end": 20,
+          "type": "d_c",
+          "properties": {
+            "description": "May call `init()` multiple times on the same Cipher instance."
+          }
+        },
+        "end": {
+          "identity": 20,
+          "labels": [
+            "class"
+          ],
+          "properties": {
+            "name": "MultiTimesCalling"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 22,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "javax.crypto.Mac",
+            "name": "javax.crypto.Mac.init(Key key)"
+          }
+        },
+        "relationship": {
+          "identity": 15,
+          "start": 22,
+          "end": 20,
+          "type": "d_c",
+          "properties": {
+            "description": "May call Mac.init(...) multiple times on the same instance"
+          }
+        },
+        "end": {
+          "identity": 20,
+          "labels": [
+            "class"
+          ],
+          "properties": {
+            "name": "MultiTimesCalling"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 22,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "org.mozilla.javascript.IRFactory",
+            "name": "org.mozilla.javascript.IRFactory.initFunction()"
+          }
+        },
+        "relationship": {
+          "identity": 15,
+          "start": 22,
+          "end": 20,
+          "type": "d_c",
+          "properties": {
+            "description": "IRFactory.initFunction() is called twice along one possible execution path, which causes an infinite loop.\n"
+          }
+        },
+        "end": {
+          "identity": 20,
+          "labels": [
+            "class"
+          ],
+          "properties": {
+            "name": "MultiTimesCalling"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 25,
+          "labels": [
+            "class"
+          ],
+          "properties": {
+            "className": "java.lang.Object",
+            "name": "java.lang.Object.hashCode()"
+          }
+        },
+        "relationship": {
+          "identity": 18,
+          "start": 25,
+          "end": 27,
+          "type": "sy_c",
+          "properties": {
+            "description":"Synchronizes on an object and then again on the same object within the synchroized bock, thereby, producing a deadlock."
+          }
+        },
+        "end": {
+          "identity": 27,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "name": "synchronized()"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 25,
+          "labels": [
+            "class"
+          ],
+          "properties": {
+            "className": "java.util.HashMap",
+              "name": "java.util.HashMap.put(K key, V value)"
+          }
+        },
+        "relationship": {
+          "identity": 18,
+          "start": 25,
+          "end": 27,
+          "type": "sy_c",
+          "properties": {
+            "description":"Updates a HashMap concurrently without ensuring synchonziation."
+          }
+        },
+        "end": {
+          "identity": 27,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "name": "synchronized()"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 25,
+          "labels": [
+            "class"
+          ],
+          "properties": {
+            "className": "org.testng.ISuite",
+            "name": "org.testng.ISuite.getAllInvokedMethods()"
+          }
+        },
+        "relationship": {
+          "identity": 18,
+          "start": 25,
+          "end": 27,
+          "type": "sy_c",
+          "properties": {
+            "description":"In ChronologicalPanel.java:44, the synchronized list, invokedMethods, is iterated over in an unsynchronized manner, but according to the [Oracle Java 7 API specification](http://docs.oracle.com/javase/7/docs/api/java/util/Collections.html#synchronizedList%28java.util.List%29), this is not thread-safe and can lead to non-deterministic behavior. This pull request adds a fix by synchronizing the iteration.\n"
+          }
+        },
+        "end": {
+          "identity": 27,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "name": "synchronized()"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 25,
+          "labels": [
+            "class"
+          ],
+          "properties": {
+            "className": "java.util.Collections",
+            "name": "java.util.Collections.synchronizedList(List<T> list)"
+          }
+        },
+        "relationship": {
+          "identity": 18,
+          "start": 25,
+          "end": 27,
+          "type": "sy_c",
+          "properties": {
+            "description":"In line 180 of JUnitXMLReporter, synchronized collection m_allTests is iterated in an unsynchronized manner, but according to [Oracle Java 7 API specification](http://docs.oracle.com/javase/7/docs/api/java/util/Collections.html#synchronizedList(java.util.List)), although a synchronizedList is thread-safe for list manipulations like insertion and deletion, manual synchronization is required when the collection is iterated. Failure to do so might result in non-deterministic behavior. The fix synchronizes m_allTests when iterating."
+          }
+        },
+        "end": {
+          "identity": 27,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "name": "synchronized()"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 25,
+          "labels": [
+            "class"
+          ],
+          "properties": {
+            "className": "org.testng.ISuite",
+            "name": "org.testng.ISuite.getResults()"
+          }
+        },
+        "relationship": {
+          "identity": 18,
+          "start": 25,
+          "end": 27,
+          "type": "sy_c",
+          "properties": {
+            "description":"In Model.java:49, the synchronized map returned by suite.getResults() is iterated over in an unsynchronized manner, but according to the [Oracle Java 7 API specification](http://docs.oracle.com/javase/7/docs/api/java/util/Collections.html#synchronizedMap%28java.util.Map%29), this is not thread-safe and can lead to non-deterministic behavior. This pull request adds a fix by synchronizing the iteration."
+          }
+        },
+        "end": {
+          "identity": 27,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "name": "synchronized()"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 25,
+          "labels": [
+            "class"
+          ],
+          "properties": {
+            "className": "javax.crypto.NullCipher",
+            "name": "javax.crypto.NullCipher"
+          }
+        },
+        "relationship": {
+          "identity": 18,
+          "start": 25,
+          "end": 27,
+          "type": "r_c",
+          "properties": {
+            "description":"Uses NullCipher as a default which doesn't encrypt the data."
+          }
+        },
+        "end": {
+          "identity": 27,
+          "labels": [
+            "class"
+          ],
+          "properties": {
+            "name": "NullCipher"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 25,
+          "labels": [
+            "class"
+          ],
+          "properties": {
+            "className": "java.io.File",
+            "name": "java.io.File.mkdirs()"
+          }
+        },
+        "relationship": {
+          "identity": 18,
+          "start": 25,
+          "end": 27,
+          "type": "r_c",
+          "properties": {
+            "description":"Below !File.exists() File.mkdir() was called, instead of File.mkdirs()."
+          }
+        },
+        "end": {
+          "identity": 27,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "name": "File.mkdirs()"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 22,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "javax.crypto.Cipher",
+            "name": "javax.crypto.Cipher.init(int opmode, Key key)"
+          }
+        },
+        "relationship": {
+          "identity": 15,
+          "start": 22,
+          "end": 20,
+          "type": "d_c",
+          "properties": {
+            "description": "An instance of Cipher is used twice (the init() method is called again), which is an invalid operation."
+          }
+        },
+        "end": {
+          "identity": 20,
+          "labels": [
+            "class"
+          ],
+          "properties": {
+            "name": "MultiTimesCalling"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 25,
+          "labels": [
+            "class"
+          ],
+          "properties": {
+            "className": "java.util.Iterator",
+            "name": "java.util.Iterator.next()"
+          }
+        },
+        "relationship": {
+          "identity": 18,
+          "start": 25,
+          "end": 27,
+          "type": "r_c",
+          "properties": {
+            "description":"Modifying a collection after an Iterator has been created and continue\n  to use the Iterator afterwards. Often happens with foreach loops.\n  \n  http://www.st.informatik.tu-darmstadt.de/artifacts/stackoverflow-cme/"
+          }
+        },
+        "end": {
+          "identity": 27,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "name": "java.util.Iterator.hasNext()"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },{
+  "segments": [
+    {
+      "start": {
+        "identity": 25,
+        "labels": [
+          "class"
+        ],
+        "properties": {
+          "className": "javax.crypto.Cipher",
+          "name": "javax.crypto.Cipher.init(int opmode, Key key)"
+        }
+      },
+      "relationship": {
+        "identity": 18,
+        "start": 25,
+        "end": 27,
+        "type": "r_c",
+        "properties": {
+          "description":"Passes Cipher.ENCRYPT_MODE to Cipher.init(), but uses the cipher for decryption."
+        }
+      },
+      "end": {
+        "identity": 27,
+        "labels": [
+          "value"
+        ],
+        "properties": {
+          "name": "Cipher.DECRYPT_MODE"
+        }
+      }
+    }
+  ],
+  "length": 1.0
+}
+]

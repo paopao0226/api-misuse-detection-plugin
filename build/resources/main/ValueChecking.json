@@ -1,0 +1,615 @@
+[{
+  "segments": [
+    {
+      "start": {
+        "identity": 14,
+        "labels": [
+          "parameter"
+        ],
+        "properties": {
+          "className": "com.sun.management.VMOption.Origin",
+          "name": "com.sun.management.VMOption.Origin.valueOf(String name).name"
+        }
+      },
+      "relationship": {
+        "identity": 11,
+        "start": 14,
+        "end": 15,
+        "type": "v_c",
+        "properties": {
+          "expected_state": "!=",
+          "description": ""
+        }
+      },
+      "end": {
+        "identity": 15,
+        "labels": [
+          "value"
+        ],
+        "properties": {
+          "name": "null"
+        }
+      }
+    }
+  ],
+  "length": 1.0
+},
+{
+  "segments": [
+    {
+      "start": {
+        "identity": 17,
+        "labels": [
+          "parameter"
+        ],
+        "properties": {
+          "className": "javax.print.attribute.standard.NumberUpSupported",
+          "name": "javax.print.attribute.standard.NumberUpSupported.NumberUpSupported(int member).number"
+        }
+      },
+      "relationship": {
+        "identity": 19,
+        "start": 17,
+        "end": 18,
+        "type": "v_c",
+        "properties": {
+          "expected_state": "<",
+          "description": ""
+        }
+      },
+      "end": {
+        "identity": 18,
+        "labels": [
+          "value"
+        ],
+        "properties": {
+          "name": "1"
+        }
+      }
+    }
+  ],
+  "length": 1.0
+},
+{
+  "segments": [
+    {
+      "start": {
+        "identity": 17,
+        "labels": [
+          "parameter"
+        ],
+        "properties": {
+          "className": "com.sun.jdi.connect.spi.TransportService",
+          "name": "com.sun.jdi.connect.spi.TransportService.attach(String address, long attachTimeout, long handshakeTimeout).address"
+        }
+      },
+      "relationship": {
+        "identity": 19,
+        "start": 17,
+        "end": 18,
+        "type": "v_c",
+        "properties": {
+          "expected_state": ">=",
+          "description": ""
+        }
+      },
+      "end": {
+        "identity": 18,
+        "labels": [
+          "value"
+        ],
+        "properties": {
+          "name": "0"
+        }
+      }
+    }
+  ],
+  "length": 1.0
+},
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 17,
+          "labels": [
+            "parameter"
+          ],
+          "properties": {
+            "className": "com.sun.jdi.ThreadReference",
+            "name": "com.sun.jdi.ThreadReference.frames(int start, int length).length"
+          }
+        },
+        "relationship": {
+          "identity": 19,
+          "start": 17,
+          "end": 18,
+          "type": "v_c",
+          "properties": {
+            "expected_state": ">=",
+            "description": ""
+          }
+        },
+        "end": {
+          "identity": 18,
+          "labels": [
+            "value"
+          ],
+          "properties": {
+            "name": "0"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  }
+,
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 17,
+          "labels": [
+            "parameter"
+          ],
+          "properties": {
+            "className": "com.sun.nio.sctp.MessageInfo",
+            "name": "com.sun.nio.sctp.MessageInfo.createOutgoing(SocketAddress address, int streamNumber).streamNumber"
+          }
+        },
+        "relationship": {
+          "identity": 19,
+          "start": 17,
+          "end": 18,
+          "type": "v_c",
+          "properties": {
+            "expected_state": "<=",
+            "description": ""
+          }
+        },
+        "end": {
+          "identity": 18,
+          "labels": [
+            "value"
+          ],
+          "properties": {
+            "name": "65536"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+    {
+      "segments": [
+        {
+          "start": {
+            "identity": 17,
+            "labels": [
+              "parameter"
+            ],
+            "properties": {
+              "className": "com.sun.nio.sctp.MessageInfo",
+              "name": "com.sun.nio.sctp.MessageInfo.createOutgoing(SocketAddress address, int streamNumber).streamNumber"
+            }
+          },
+          "relationship": {
+            "identity": 19,
+            "start": 17,
+            "end": 18,
+            "type": "v_c",
+            "properties": {
+              "expected_state": ">=",
+              "description": ""
+            }
+          },
+          "end": {
+            "identity": 18,
+            "labels": [
+              "value"
+            ],
+            "properties": {
+              "name": "0"
+            }
+          }
+        }
+      ],
+      "length": 1.0
+    },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 17,
+          "labels": [
+            "parameter"
+          ],
+          "properties": {
+            "className": "javax.crypto.Cipher",
+            "name": "javax.crypto.Cipher.getInstance(String transformation).transformation"
+          }
+        },
+        "relationship": {
+          "identity": 19,
+          "start": 17,
+          "end": 18,
+          "type": "v_c",
+          "properties": {
+            "expected_state": "!=",
+            "description": "Uses PBEWithMD5AndDES which is unsafe."
+          }
+        },
+        "end": {
+          "identity": 18,
+          "labels": [
+            "value"
+          ],
+          "properties": {
+            "name": "PBEWithMD5AndDES"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 17,
+          "labels": [
+            "parameter"
+          ],
+          "properties": {
+            "className": "java.net.URLDecoder",
+            "name": "java.net.URLDecoder.decode(String s, String enc).enc"
+          }
+        },
+        "relationship": {
+          "identity": 19,
+          "start": 17,
+          "end": 18,
+          "type": "v_c",
+          "properties": {
+            "expected_state": "==",
+            "description": "In line 206 of AsyncAgiEvent, it uses ISO-8859-1 encoding scheme but according to [Oracle Java 7 API specification](http://docs.oracle.com/javase/7/docs/api/java/net/URLDecoder.html#decode%28java.lang.String,%20java.lang.String%29), the World Wide Web Consortium Recommendation states that UTF-8 should be used. Not doing so may introduce incompatibilities. This pull request adds a fix by using UTF-8 encoding."
+          }
+        },
+        "end": {
+          "identity": 18,
+          "labels": [
+            "value"
+          ],
+          "properties": {
+            "name": "UTF-8"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 17,
+          "labels": [
+            "parameter"
+          ],
+          "properties": {
+            "className": "java.net.URLDecoder",
+            "name": "java.net.URLDecoder.decode(String s, String enc).enc"
+          }
+        },
+        "relationship": {
+          "identity": 19,
+          "start": 17,
+          "end": 18,
+          "type": "v_c",
+          "properties": {
+            "expected_state": "==",
+            "description": "In line 206 of AsyncAgiEvent, it uses ISO-8859-1 encoding scheme but according to [Oracle Java 7 API specification](http://docs.oracle.com/javase/7/docs/api/java/net/URLDecoder.html#decode%28java.lang.String,%20java.lang.String%29), the World Wide Web Consortium Recommendation states that UTF-8 should be used. Not doing so may introduce incompatibilities. This pull request adds a fix by using UTF-8 encoding."
+          }
+        },
+        "end": {
+          "identity": 18,
+          "labels": [
+            "value"
+          ],
+          "properties": {
+            "name": "UTF-8"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 17,
+          "labels": [
+            "parameter"
+          ],
+          "properties": {
+            "className": "android.content.Intent",
+            "name": "android.content.Intent.setDataAndType(String s, String enc).enc"
+          }
+        },
+        "relationship": {
+          "identity": 19,
+          "start": 17,
+          "end": 18,
+          "type": "v_c",
+          "properties": {
+            "expected_state": "==",
+            "description": "Passes invalid mime-type to Intent.setDataAndType(). http://stackoverflow.com/questions/6573541/no-intent-to-view-jpg-on-honeycomb\n"
+          }
+        },
+        "end": {
+          "identity": 18,
+          "labels": [
+            "value"
+          ],
+          "properties": {
+            "name": "UTF-8"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 17,
+          "labels": [
+            "parameter"
+          ],
+          "properties": {
+            "className": "javax.crypto.Cipher",
+            "name": "javax.crypto.Cipher.getInstance(String transformation).transformation"
+          }
+        },
+        "relationship": {
+          "identity": 19,
+          "start": 17,
+          "end": 18,
+          "type": "v_c",
+          "properties": {
+            "expected_state": "!=",
+            "description": "Uses DES which is unsafe."
+          }
+        },
+        "end": {
+          "identity": 18,
+          "labels": [
+            "value"
+          ],
+          "properties": {
+            "name": "DES"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 17,
+          "labels": [
+            "parameter"
+          ],
+          "properties": {
+            "className": "javax.crypto.Cipher",
+            "name": "javax.crypto.Cipher.getInstance(String transformation).transformation"
+          }
+        },
+        "relationship": {
+          "identity": 19,
+          "start": 17,
+          "end": 18,
+          "type": "v_c",
+          "properties": {
+            "expected_state": "==",
+            "description": "  Uses a non-random key in CBC mode."
+          }
+        },
+        "end": {
+          "identity": 18,
+          "labels": [
+            "value"
+          ],
+          "properties": {
+            "name": "CBC"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 17,
+          "labels": [
+            "parameter"
+          ],
+          "properties": {
+            "className": "javax.crypto.Cipher",
+            "name": "javax.crypto.Cipher.getInstance(String transformation).transformation"
+          }
+        },
+        "relationship": {
+          "identity": 19,
+          "start": 17,
+          "end": 18,
+          "type": "v_c",
+          "properties": {
+            "expected_state": "!=",
+            "description": "  Uses RSA with PKCS1Padding.\n"
+          }
+        },
+        "end": {
+          "identity": 18,
+          "labels": [
+            "value"
+          ],
+          "properties": {
+            "name": "RSA/PKCS1Padding"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 17,
+          "labels": [
+            "parameter"
+          ],
+          "properties": {
+            "className": "javax.crypto.Cipher",
+            "name": "javax.crypto.Cipher.getInstance(String transformation).transformation"
+          }
+        },
+        "relationship": {
+          "identity": 19,
+          "start": 17,
+          "end": 18,
+          "type": "v_c",
+          "properties": {
+            "expected_state": "!=",
+            "description": "Uses Blowfish with ECB mode."
+          }
+        },
+        "end": {
+          "identity": 18,
+          "labels": [
+            "value"
+          ],
+          "properties": {
+            "name": "Blowfish/ECB"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 17,
+          "labels": [
+            "parameter"
+          ],
+          "properties": {
+            "className": "javax.crypto.Cipher",
+            "name": "javax.crypto.Cipher.getInstance(String transformation).transformation"
+          }
+        },
+        "relationship": {
+          "identity": 19,
+          "start": 17,
+          "end": 18,
+          "type": "v_c",
+          "properties": {
+            "expected_state": "!=",
+            "description": "Uses AES with ECB mode."
+          }
+        },
+        "end": {
+          "identity": 18,
+          "labels": [
+            "value"
+          ],
+          "properties": {
+            "name": "AES/ECB"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 17,
+          "labels": [
+            "parameter"
+          ],
+          "properties": {
+            "className": "javax.crypto.Cipher",
+            "name": "javax.crypto.Cipher.getInstance(String transformation).transformation"
+          }
+        },
+        "relationship": {
+          "identity": 19,
+          "start": 17,
+          "end": 18,
+          "type": "v_c",
+          "properties": {
+            "expected_state": "!=",
+            "description": "Uses DSA with defaults which is considered a bad practice."
+          }
+        },
+        "end": {
+          "identity": 18,
+          "labels": [
+            "value"
+          ],
+          "properties": {
+            "name": "DSA"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 17,
+          "labels": [
+            "parameter"
+          ],
+          "properties": {
+            "className": "javax.crypto.Cipher",
+            "name": "javax.crypto.Cipher.getInstance(String transformation).transformation"
+          }
+        },
+        "relationship": {
+          "identity": 19,
+          "start": 17,
+          "end": 18,
+          "type": "v_c",
+          "properties": {
+            "expected_state": "==",
+            "description": "Requests Cipher \"Blowfish\", which returns unsafe default configuration."
+          }
+        },
+        "end": {
+          "identity": 18,
+          "labels": [
+            "value"
+          ],
+          "properties": {
+            "name": "Blowfish/"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  }
+]

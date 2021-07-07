@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1762905611">
+      <usages-collector id="statistics.lifecycle.project">
+        <usage id="project.opened" value="130" />
+        <usage id="project.open.time.3" value="4" />
+        <usage id="project.open.time.4" value="4" />
+        <usage id="project.closed" value="64" />
+        <usage id="project.open.time.9" value="32" />
+        <usage id="project.open.time.10" value="25" />
+        <usage id="project.open.time.8" value="9" />
+        <usage id="project.open.time.11" value="20" />
+        <usage id="project.open.time.7" value="4" />
+        <usage id="project.open.time.13" value="5" />
+        <usage id="project.open.time.12" value="16" />
+        <usage id="project.open.time.15" value="2" />
+        <usage id="project.open.time.16" value="4" />
+        <usage id="project.open.time.17" value="3" />
+        <usage id="project.open.time.1" value="1" />
+        <usage id="project.open.time.14" value="1" />
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <usage id="XML" value="44" />
+        <usage id="JAVA" value="207" />
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <usage id="JAVA" value="159" />
+        <usage id="CLASS" value="47" />
+        <usage id="XML" value="1" />
+      </usages-collector>
+      <usages-collector id="statistics.build.gradle.actions" />
+      <usages-collector id="statistics.debugger.breakpoints.usage" />
+      <usages-collector id="statistics.run.configuration.start" />
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.terminalShell">
+        <usage id="local.exec" value="1">
+          <context>
+            <entry key="data_1" value="Windows" />
+            <entry key="data_2" value="Windows 10 10.0" />
+            <entry key="data_3" value="cmd" />
+          </context>
+        </usage>
+      </usages-collector>
+      <usages-collector id="statistics.actions.runAnything" />
+      <usages-collector id="statistics.searchEverywhere" />
+      <usages-collector id="statistics.build.maven.actions" />
+      <usages-collector id="statistics.build.tools.actions" />
+    </session>
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Android</id>
+          </State>
+          <State>
+            <id>CorrectnessLintAndroid</id>
+          </State>
+          <State>
+            <id>Gradle</id>
+          </State>
+          <State>
+            <id>GradleMigrationKotlin</id>
+          </State>
+          <State>
+            <id>InternationalizationLintAndroid</id>
+          </State>
+          <State>
+            <id>Kotlin</id>
+          </State>
+          <State>
+            <id>LintAndroid</id>
+          </State>
+          <State>
+            <id>MigrationKotlin</id>
+          </State>
+          <State>
+            <id>PerformanceLintAndroid</id>
+          </State>
+          <State>
+            <id>Probable bugsGradle</id>
+          </State>
+          <State>
+            <id>SecurityLintAndroid</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>AndroidLintNewApi</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="TerminalArrangementManager">
+    <option name="myTabStates">
+      <TerminalTabState tabName="Local" commandHistoryFileName="history-" />
+    </option>
+  </component>
+</project>

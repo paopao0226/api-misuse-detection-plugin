@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FUSProjectUsageTrigger">
+    <session id="-928496644">
+      <usages-collector id="statistics.lifecycle.project">
+        <usage id="project.opened" value="100" />
+        <usage id="project.open.time.0" value="1" />
+        <usage id="project.closed" value="47" />
+        <usage id="project.open.time.7" value="20" />
+        <usage id="project.open.time.8" value="18" />
+        <usage id="project.open.time.6" value="5" />
+        <usage id="project.open.time.10" value="13" />
+        <usage id="project.open.time.9" value="15" />
+        <usage id="project.open.time.14" value="2" />
+        <usage id="project.open.time.11" value="2" />
+        <usage id="project.open.time.16" value="1" />
+        <usage id="project.open.time.1" value="6" />
+        <usage id="project.open.time.3" value="7" />
+        <usage id="project.open.time.4" value="2" />
+        <usage id="project.open.time.2" value="4" />
+        <usage id="project.open.time.5" value="2" />
+        <usage id="project.open.time.17" value="1" />
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <usage id="JAVA" value="86" />
+      </usages-collector>
+      <usages-collector id="statistics.terminalShell" />
+      <usages-collector id="statistics.build.maven.actions" />
+      <usages-collector id="statistics.build.gradle.actions" />
+      <usages-collector id="statistics.searchEverywhere">
+        <usage id="dialogOpen" value="1">
+          <context>
+            <entry key="data_1" value="SearchEverywhereContributor.All" />
+          </context>
+        </usage>
+      </usages-collector>
+      <usages-collector id="statistics.run.configuration.start">
+        <usage id="Application" value="4">
+          <context>
+            <entry key="data_1" value="Run" />
+          </context>
+        </usage>
+      </usages-collector>
+      <usages-collector id="statistics.actions.runAnything" />
+      <usages-collector id="statistics.debugger.breakpoints.usage" />
+      <usages-collector id="statistics.build.tools.actions" />
+      <usages-collector id="statistics.file.types.open">
+        <usage id="JAVA" value="9" />
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
+    </session>
+  </component>
+</project>

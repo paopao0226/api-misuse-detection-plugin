@@ -1,0 +1,738 @@
+[
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 3,
+          "labels": ["method"],
+          "properties": {
+            "className": "java.io.ByteArrayOutputStream",
+            "name": "toByteArray"
+          }
+        },
+        "relationship": {
+          "identity": 2,
+          "start": 3,
+          "end": 1,
+          "type": "c_o",
+          "properties": {
+            "value": "follow",
+            "description": "java.io.ByteArrayOutputStream.toByteArray() should have follow method call java.io.ByteArrayOutputStream close"
+          }
+        },
+        "end": {
+          "identity": 1,
+          "labels": ["method"],
+          "properties": {
+            "className": "java.io.ByteArrayOutputStream",
+            "name": "close"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 3,
+          "labels": ["method"],
+          "properties": {
+            "className": "java.lang.String",
+            "name": "getBytes"
+          }
+        },
+        "relationship": {
+          "identity": 2,
+          "start": 3,
+          "end": 1,
+          "type": "c_o",
+          "properties": {
+            "value": "follow",
+            "description": " Text is converted to bytes for encoding without an explicit encoding."
+          }
+        },
+        "end": {
+          "identity": 1,
+          "labels": ["parameter"],
+          "properties": {
+            "className": "java.lang.String",
+            "name": "String"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 3,
+          "labels": ["newExpression"],
+          "properties": {
+            "className": "java.lang.String",
+            "name": "String"
+          }
+        },
+        "relationship": {
+          "identity": 2,
+          "start": 3,
+          "end": 1,
+          "type": "c_o",
+          "properties": {
+            "value": "follow",
+            "description": "Decoded data is converted to String without explicitly specifying an encoding."
+          }
+        },
+        "end": {
+          "identity": 1,
+          "labels": ["parameter"],
+          "properties": {
+            "className": "java.lang.String",
+            "name": "String"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 3,
+          "labels": ["variable"],
+          "properties": {
+            "className": "java.sql.ResultSet",
+            "name": "ResultSet"
+          }
+        },
+        "relationship": {
+          "identity": 2,
+          "start": 3,
+          "end": 1,
+          "type": "c_o",
+          "properties": {
+            "value": "follow",
+            "description": "The `ResultSet` fetched in line 644 is never closed."
+          }
+        },
+        "end": {
+          "identity": 1,
+          "labels": ["method"],
+          "properties": {
+            "className": "java.sql.ResultSet",
+            "name": "close"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 3,
+          "labels": ["variable"],
+          "properties": {
+            "className": "java.sql.PreparedStatement",
+            "name": "PreparedStatement"
+          }
+        },
+        "relationship": {
+          "identity": 2,
+          "start": 3,
+          "end": 1,
+          "type": "c_o",
+          "properties": {
+            "value": "follow",
+            "description": "The `PreparedStatement` opened in line 702 is never closed."
+          }
+        },
+        "end": {
+          "identity": 1,
+          "labels": ["method"],
+          "properties": {
+            "className": "java.sql.Statement",
+            "name": "close"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 3,
+          "labels": ["method"],
+          "properties": {
+            "className": "org.apache.commons.httpclient.HttpConnection",
+            "name": "open"
+          }
+        },
+        "relationship": {
+          "identity": 2,
+          "start": 3,
+          "end": 1,
+          "type": "c_o",
+          "properties": {
+            "value": "follow",
+            "description": "Exception on HttpConnection.writeRequest() leaves the connection open."
+          }
+        },
+        "end": {
+          "identity": 1,
+          "labels": ["method"],
+          "properties": {
+            "className": "org.apache.commons.httpclient.HttpConnection",
+            "name": "close"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 3,
+          "labels": ["method"],
+          "properties": {
+            "className": "org.apache.commons.httpclient.auth.AuthState",
+            "name": "invalidate"
+          }
+        },
+        "relationship": {
+          "identity": 2,
+          "start": 3,
+          "end": 1,
+          "type": "c_o",
+          "properties": {
+            "value": "follow",
+            "description": "When AuthState.isPreemptive(), both invalidate() and setAuthRequested(true)\n  should be called. The latter was missing."
+          }
+        },
+        "end": {
+          "identity": 1,
+          "labels": ["method"],
+          "properties": {
+            "className": "org.apache.commons.httpclient.auth.AuthState",
+            "name": "setAuthRequested"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 3,
+          "labels": ["newExpression"],
+          "properties": {
+            "className": "java.text.SimpleDateFormat",
+            "name": "SimpleDateFormat"
+          }
+        },
+        "relationship": {
+          "identity": 2,
+          "start": 3,
+          "end": 1,
+          "type": "c_o",
+          "properties": {
+            "value": "follow",
+            "description": "Misses to pass Locale to constructor of SimpleDateFormat."
+          }
+        },
+        "end": {
+          "identity": 1,
+          "labels": ["parameter"],
+          "properties": {
+            "className": "java.util.Locale",
+            "name": "Locale"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 3,
+          "labels": ["method"],
+          "properties": {
+            "className": "org.apache.jackrabbit.core.config.ConfigurationParser",
+            "name": "getAttribute"
+          }
+        },
+        "relationship": {
+          "identity": 2,
+          "start": 3,
+          "end": 1,
+          "type": "c_o",
+          "properties": {
+            "value": "follow",
+            "description": " The results of ConfigurationParser.getAttribute() should be processed\n  by ConfigurationParser.replaceVariables(). This step was missing."
+          }
+        },
+        "end": {
+          "identity": 1,
+          "labels": ["method"],
+          "properties": {
+            "className": "org.apache.jackrabbit.core.config.ConfigurationParser",
+            "name": "replaceVariables"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 3,
+          "labels": ["variable"],
+          "properties": {
+            "className": "java.io.InputStream",
+            "name": "InputStream"
+          }
+        },
+        "relationship": {
+          "identity": 2,
+          "start": 3,
+          "end": 1,
+          "type": "c_o",
+          "properties": {
+            "value": "follow",
+            "description": "InputStream.close() should be called after finished using the stream.\n  The particular stream is passed to QValueFactoryImpl.create() as a parameter, but\n  should be closed by the method, as defined in its contract."
+          }
+        },
+        "end": {
+          "identity": 1,
+          "labels": ["method"],
+          "properties": {
+            "className": "java.io.InputStream",
+            "name": "close"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 3,
+          "labels": ["method"],
+          "properties": {
+            "className": "java.io.File",
+            "name": "exists"
+          }
+        },
+        "relationship": {
+          "identity": 2,
+          "start": 3,
+          "end": 1,
+          "type": "c_o",
+          "properties": {
+            "value": "follow",
+            "description": "Below !File.exists() File.mkdir() was called, instead of File.mkdirs()."
+          }
+        },
+        "end": {
+          "identity": 1,
+          "labels": ["method"],
+          "properties": {
+            "className": "java.io.File",
+            "name": "mkdirs"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 3,
+          "labels": ["method"],
+          "properties": {
+            "className": "org.w3c.tools.resources.ResourceReference",
+            "name": "isLocked"
+          }
+        },
+        "relationship": {
+          "identity": 2,
+          "start": 3,
+          "end": 1,
+          "type": "c_o",
+          "properties": {
+            "value": "follow",
+            "description": "the `ResourceReference` `root` is locked, but there is no\n  matching `unlock()` assuming normal execution."
+          }
+        },
+        "end": {
+          "identity": 1,
+          "labels": ["method"],
+          "properties": {
+            "className": "org.w3c.tools.resources.ResourceReference",
+            "name": "unlock"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 3,
+          "labels": ["method"],
+          "properties": {
+            "className": "android.app.Activity",
+            "name": "findViewById"
+          }
+        },
+        "relationship": {
+          "identity": 2,
+          "start": 3,
+          "end": 1,
+          "type": "c_o",
+          "properties": {
+            "value": "before",
+            "description": "Fails to find view by id in onCreate()."
+          }
+        },
+        "end": {
+          "identity": 1,
+          "labels": ["method"],
+          "properties": {
+            "className": "android.app.Activity",
+            "name": "setContentView"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 3,
+          "labels": ["variable"],
+          "properties": {
+            "className": "java.io.Writer",
+            "name": "Writer"
+          }
+        },
+        "relationship": {
+          "identity": 2,
+          "start": 3,
+          "end": 1,
+          "type": "c_o",
+          "properties": {
+            "value": "follow",
+            "description": "  Misses to call Closeable.close()."
+          }
+        },
+        "end": {
+          "identity": 1,
+          "labels": ["method"],
+          "properties": {
+            "className": "java.io.Writer",
+            "name": "close"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 3,
+          "labels": ["method"],
+          "properties": {
+            "className": "java.nio.ByteBuffer",
+            "name": "put"
+          }
+        },
+        "relationship": {
+          "identity": 2,
+          "start": 3,
+          "end": 1,
+          "type": "c_o",
+          "properties": {
+            "value": "follow",
+            "description": "  Misses to call ByteBuffer.flip() between writing to and reading from\n  the buffer (or vice versa). There''s many ways to read/write buffer, some of which\n  fail if flip() is missing, while others just do nothing."
+          }
+        },
+        "end": {
+          "identity": 1,
+          "labels": ["method"],
+          "properties": {
+            "className": "java.nio.ByteBuffer",
+            "name": "flip"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 3,
+          "labels": ["method"],
+          "properties": {
+            "className": "java.nio.ByteBuffer",
+            "name": "get"
+          }
+        },
+        "relationship": {
+          "identity": 2,
+          "start": 3,
+          "end": 1,
+          "type": "c_o",
+          "properties": {
+            "value": "before",
+            "description": "  Misses to call ByteBuffer.flip() between writing to and reading from\n  the buffer (or vice versa). There''s many ways to read/write buffer, some of which\n  fail if flip() is missing, while others just do nothing."
+          }
+        },
+        "end": {
+          "identity": 1,
+          "labels": ["method"],
+          "properties": {
+            "className": "java.nio.ByteBuffer",
+            "name": "flip"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 3,
+          "labels": ["method"],
+          "properties": {
+            "className": "java.nio.ByteBuffer",
+            "name": "put"
+          }
+        },
+        "relationship": {
+          "identity": 2,
+          "start": 3,
+          "end": 1,
+          "type": "c_o",
+          "properties": {
+            "value": "follow",
+            "description": "  Misses to call ByteBuffer.flip() between writing to and reading from\n  the buffer (or vice versa). There''s many ways to read/write buffer, some of which\n  fail if flip() is missing, while others just do nothing."
+          }
+        },
+        "end": {
+          "identity": 1,
+          "labels": ["method"],
+          "properties": {
+            "className": "java.nio.ByteBuffer",
+            "name": "flip"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 3,
+          "labels": ["method"],
+          "properties": {
+            "className": "java.nio.channels.FileChannel",
+            "name": "write"
+          }
+        },
+        "relationship": {
+          "identity": 2,
+          "start": 3,
+          "end": 1,
+          "type": "c_o",
+          "properties": {
+            "value": "before",
+            "description": "  Misses to call ByteBuffer.flip() between writing to and reading from\n  the buffer (or vice versa). There''s many ways to read/write buffer, some of which\n  fail if flip() is missing, while others just do nothing."
+          }
+        },
+        "end": {
+          "identity": 1,
+          "labels": ["method"],
+          "properties": {
+            "className": "java.nio.ByteBuffer",
+            "name": "flip"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 3,
+          "labels": ["variable"],
+          "properties": {
+            "className": "java.nio.channels.FileChannel",
+            "name": "FileChannel"
+          }
+        },
+        "relationship": {
+          "identity": 2,
+          "start": 3,
+          "end": 1,
+          "type": "c_o",
+          "properties": {
+            "value": "follow",
+            "description": "Misses to flush FileChannel, such that the contents have not been written\n  before the next attempt to read from the underlying resource."
+          }
+        },
+        "end": {
+          "identity": 1,
+          "labels": ["method"],
+          "properties": {
+            "className": "java.nio.channels.spi.AbstractInterruptibleChannel",
+            "name": "close"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 3,
+          "labels": ["method"],
+          "properties": {
+            "className": "java.awt.Window",
+            "name": "setVisible"
+          }
+        },
+        "relationship": {
+          "identity": 2,
+          "start": 3,
+          "end": 1,
+          "type": "c_o",
+          "properties": {
+            "value": "before",
+            "description": "Calls JFrame.setVisible(true) before JFrame.pack(). This may lead to\n  undesired effects, such as the window being moved to the default plattform\n  location."
+          }
+        },
+        "end": {
+          "identity": 1,
+          "labels": ["method"],
+          "properties": {
+            "className": "java.awt.Window",
+            "name": "pack"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 3,
+          "labels": ["variable"],
+          "properties": {
+            "className": "java.lang.StringBuilder",
+            "name": "StringBuilder"
+          }
+        },
+        "relationship": {
+          "identity": 2,
+          "start": 3,
+          "end": 1,
+          "type": "c_o",
+          "properties": {
+            "value": "follow",
+            "description": "a `StringBuilder` is created, but the instance is not used."
+          }
+        },
+        "end": {
+          "identity": 1,
+          "labels": ["method"],
+          "properties": {
+            "className": "java.lang.StringBuilder",
+            "name": "append"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 3,
+          "labels": ["variable"],
+          "properties": {
+            "className": "android.database.Cursor",
+            "name": "Cursor"
+          }
+        },
+        "relationship": {
+          "identity": 2,
+          "start": 3,
+          "end": 1,
+          "type": "c_o",
+          "properties": {
+            "value": "follow",
+            "description": "Fails to release Cursor."
+          }
+        },
+        "end": {
+          "identity": 1,
+          "labels": ["method"],
+          "properties": {
+            "className": "android.database.Cursor",
+            "name": "close"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 3,
+          "labels": ["method"],
+          "properties": {
+            "className": "java.io.ByteArrayOutputStream",
+            "name": "toByteArray"
+          }
+        },
+        "relationship": {
+          "identity": 2,
+          "start": 3,
+          "end": 1,
+          "type": "c_o",
+          "properties": {
+            "value": "before",
+            "description": "When a DataOutputStream instance wraps an underlying ByteArrayOutputStream instance,\nit is recommended to flush or close the DataOutputStream before invoking the underlying instances's toByteArray().\nlthough in these cases this is not strictly necessary because the\nDataOutputStream's close and flush method has no effects. However, it is a good practice to call"
+          }
+        },
+        "end": {
+          "identity": 1,
+          "labels": ["method"],
+          "properties": {
+            "className": "java.io.DataOutputStream",
+            "name": "flush"
+          }
+        }
+      }
+    ]
+  }
+]

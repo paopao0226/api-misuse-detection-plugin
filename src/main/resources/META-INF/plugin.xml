@@ -1,0 +1,90 @@
+<idea-plugin>
+    <id>csu.edu</id>
+    <name>api_-misuse_-detection</name>
+    <vendor email="xxxxx@163.com" url="http://www.xxx.com">xxxxCompany</vendor>
+
+    <description><![CDATA[
+    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.<br>
+    <em>xxxxxxx</em>
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+
+    <depends>com.intellij.modules.lang</depends>
+
+    <change-notes>
+        <![CDATA[
+      <ul>
+        <li><b>2.0.0</b> Convert to Gradle-based plugin.</li>
+        <li><b>1.1.0</b> Refactor resources, register this inspection.</li>
+        <li><b>1.0.0</b> Release 2018.3 and earlier.</li>
+      </ul>
+    ]]>
+    </change-notes>
+
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!--<localInspection language="JAVA"-->
+                         <!--displayName="Method arg constraint violated"-->
+                         <!--groupPath="Java"-->
+                         <!--groupBundle="messages.InspectionsBundle"-->
+                         <!--groupKey="group.names.probable.bugs"-->
+                         <!--enabledByDefault="true"-->
+                         <!--level="ERROR"-->
+                         <!--implementationClass="inspection.ValueCheckingInspection"/>-->
+        <localInspection language="JAVA"
+                         displayName="Method arg constraint violated"
+                         groupPath="Java"
+                         groupBundle="messages.InspectionsBundle"
+                         groupKey="group.names.probable.bugs"
+                         enabledByDefault="true"
+                         level="ERROR"
+                         implementationClass="inspection.CallOrderInspection"/>
+        <localInspection language="JAVA"
+                         displayName="Method arg constraint violated"
+                         groupPath="Java"
+                         groupBundle="messages.InspectionsBundle"
+                         groupKey="group.names.probable.bugs"
+                         enabledByDefault="true"
+                         level="ERROR"
+                         implementationClass="inspection.StateCheckingInspection"/>
+        <localInspection language="JAVA"
+                         displayName="Method arg constraint violated"
+                         groupPath="Java"
+                         groupBundle="messages.InspectionsBundle"
+                         groupKey="group.names.probable.bugs"
+                         enabledByDefault="true"
+                         level="WARNING"
+                         implementationClass="inspection.RedundantCheckingInspection"/>
+        <localInspection language="JAVA"
+                         displayName="Method arg constraint violated"
+                         groupPath="Java"
+                         groupBundle="messages.InspectionsBundle"
+                         groupKey="group.names.probable.bugs"
+                         enabledByDefault="true"
+                         level="ERROR"
+                         implementationClass="inspection.TriggerInspection"/>
+        <localInspection language="JAVA"
+                         displayName="Method arg constraint violated"
+                         groupPath="Java"
+                         groupBundle="messages.InspectionsBundle"
+                         groupKey="group.names.probable.bugs"
+                         enabledByDefault="true"
+                         level="ERROR"
+                         implementationClass="inspection.SyncInspection"/>
+        <localInspection language="JAVA"
+                         displayName="Method arg constraint violated"
+                         groupPath="Java"
+                         groupBundle="messages.InspectionsBundle"
+                         groupKey="group.names.probable.bugs"
+                         enabledByDefault="true"
+                         level="ERROR"
+                         implementationClass="inspection.DescriptionCheckingInspection"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+    <version/>
+</idea-plugin>

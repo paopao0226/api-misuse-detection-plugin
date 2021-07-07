@@ -1,0 +1,29 @@
+<application>
+  <component name="DimensionService">
+    <location key="new project wizard.0.0.1920.1080@120dpi" x="511" y="0" />
+    <location key="FileChooserDialogImpl.0.0.1920.1080@120dpi" x="689" y="104" />
+    <location key="NewModule_or_Project.wizard.0.0.1920.1080@120dpi" x="500" y="51" />
+    <location key="WELCOME_SCREEN.0.0.1920.1080@120dpi" x="961" y="456" />
+    <location key="com.intellij.ide.util.TipDialog.0.0.1920.1080@120dpi" x="510" y="299" />
+    <location key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog.0.0.1920.1080@120dpi" x="591" y="194" />
+    <location key="IDE.errors.dialog.0.0.1920.1080@120dpi" x="558" y="221" />
+    <location key="#com.intellij.internal.psiView.PsiViewerDialog.0.0.1920.1080@120dpi" x="428" y="0" />
+    <location key="search.everywhere.popup.0.0.1920.1080@120dpi" x="504" y="183" />
+    <location key="SettingsEditor.0.0.1920.1080@120dpi" x="394" y="0" />
+    <location key="#Project_Structure.0.0.1920.1080@120dpi" x="311" y="0" />
+    <location key="Maven.ArtifactSearchDialog.0.0.1920.1080@120dpi" x="374" y="86" />
+    <location key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes.0.0.1920.1080@120dpi" x="691" y="348" />
+    <location key="#Inspections.0.0.1920.1080@120dpi" x="501" y="116" />
+    <location key="#com.intellij.execution.impl.EditConfigurationsDialog.0.0.1920.1080@120dpi" x="279" y="86" />
+    <location key="ProcessPopupWindow.0.0.1920.1080@120dpi" x="1418" y="888" />
+    <location key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1.0.0.1920.1080@120dpi" x="660" y="354" />
+    <size key="#com.intellij.internal.psiView.PsiViewerDialog.0.0.1920.1080@120dpi" width="1050" height="1017" />
+    <size key="GridCell.Tab.0.left.0.0.1920.1080@120dpi" width="1678" height="237" />
+    <size key="GridCell.Tab.0.center.0.0.1920.1080@120dpi" width="1678" height="237" />
+    <size key="GridCell.Tab.0.right.0.0.1920.1080@120dpi" width="1678" height="237" />
+    <size key="GridCell.Tab.0.bottom.0.0.1920.1080@120dpi" width="1678" height="237" />
+    <size key="search.everywhere.popup.0.0.1920.1080@120dpi" width="840" height="849" />
+    <size key="IDE.errors.dialog.0.0.1920.1080@120dpi" width="1049" height="808" />
+    <size key="ProcessPopupWindow.0.0.1920.1080@120dpi" width="500" height="149" />
+  </component>
+</application>

@@ -1,0 +1,24 @@
+<idea-plugin>
+  <idea-version since-build="183.4588" until-build="183.*"/>
+  <id>csu.edu</id>
+  <name>api_-misuse_-detection</name>
+  <vendor email="xxxxx@163.com" url="http://www.xxx.com">xxxxCompany</vendor>
+  <description>
+    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.&lt;br&gt;
+    &lt;em&gt;xxxxxxx&lt;/em&gt;
+    </description>
+  <depends>com.intellij.modules.lang</depends>
+  <change-notes>
+      Add change notes here.&lt;br&gt;
+      &lt;em&gt;most HTML tags may be used&lt;/em&gt;</change-notes>
+  <extensions defaultExtensionNs="com.intellij">
+    <localInspection language="JAVA" displayName="Method arg constraint violated" groupPath="Java" groupBundle="messages.InspectionsBundle" groupKey="group.names.probable.bugs" enabledByDefault="true" level="ERROR" implementationClass="inspection.CallOrderInspection"/>
+    <localInspection language="JAVA" displayName="Method arg constraint violated" groupPath="Java" groupBundle="messages.InspectionsBundle" groupKey="group.names.probable.bugs" enabledByDefault="true" level="ERROR" implementationClass="inspection.StateCheckingInspection"/>
+    <localInspection language="JAVA" displayName="Method arg constraint violated" groupPath="Java" groupBundle="messages.InspectionsBundle" groupKey="group.names.probable.bugs" enabledByDefault="true" level="WARNING" implementationClass="inspection.RedundantCheckingInspection"/>
+    <localInspection language="JAVA" displayName="Method arg constraint violated" groupPath="Java" groupBundle="messages.InspectionsBundle" groupKey="group.names.probable.bugs" enabledByDefault="true" level="ERROR" implementationClass="inspection.TriggerInspection"/>
+    <localInspection language="JAVA" displayName="Method arg constraint violated" groupPath="Java" groupBundle="messages.InspectionsBundle" groupKey="group.names.probable.bugs" enabledByDefault="true" level="ERROR" implementationClass="inspection.SyncInspection"/>
+    <localInspection language="JAVA" displayName="Method arg constraint violated" groupPath="Java" groupBundle="messages.InspectionsBundle" groupKey="group.names.probable.bugs" enabledByDefault="true" level="ERROR" implementationClass="inspection.DescriptionCheckingInspection"/>
+  </extensions>
+  <actions/>
+  <version>1.0-SNAPSHOT</version>
+</idea-plugin>

@@ -1,0 +1,1104 @@
+[
+  {
+  "segments": [
+    {
+      "start": {
+        "identity": 11,
+        "labels": [
+          "method"
+        ],
+        "properties": {
+          "className" : "java.util.Iterator",
+          "name": "next"
+        }
+      },
+      "relationship": {
+        "identity": 8,
+        "start": 11,
+        "end": 9,
+        "type": "s_c",
+        "properties": {
+          "expected_state": "false",
+          "violation": "NullPointerException",
+          "description" : "???"
+        }
+      },
+      "end": {
+        "identity": 9,
+        "labels": [
+          "method"
+        ],
+        "properties": {
+          "className" : "java.util.Set",
+          "name": "isEmpty"
+        }
+      }
+    }
+  ],
+  "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 11,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "org.apache.commons.math3.geometry.euclidean.twod.Line",
+            "name": "intersection"
+          }
+        },
+        "relationship": {
+          "identity": 8,
+          "start": 11,
+          "end": 9,
+          "type": "s_c",
+          "properties": {
+            "expected_state": "false",
+            "violation": "NullPointerException",
+            "description":"SubLine.intersection() may return null."
+          }
+        },
+        "end": {
+          "identity": 9,
+          "labels": [
+            "variable"
+          ],
+          "properties": {
+            "className": "org.apache.commons.math3.geometry.euclidean.twod.Vector2D",
+            "name": "null"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 11,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className" : "java.util.Iterator",
+            "name": "next"
+          }
+        },
+        "relationship": {
+          "identity": 8,
+          "start": 11,
+          "end": 9,
+          "type": "s_c",
+          "properties": {
+            "expected_state": "true",
+            "violation": "NullPointerException",
+            "description" : "???"
+          }
+        },
+        "end": {
+          "identity": 9,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className" : "java.util.Iterator",
+            "name": "hasNext"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 11,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "com.google.javascript.rhino.jstype.ObjectType",
+            "name": "getImplicitPrototype"
+          }
+        },
+        "relationship": {
+          "identity": 8,
+          "start": 11,
+          "end": 9,
+          "type": "s_c",
+          "properties": {
+            "expected_state": "false",
+            "violation": "IndexOutOfBoundsException",
+            "description":"ObjectType.getImplicitPrototype() may return null."
+          }
+        },
+        "end": {
+          "identity": 9,
+          "labels": [
+            "variable"
+          ],
+          "properties": {
+            "className": "com.google.javascript.rhino.jstype.ObjectType",
+            "name": "null"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 11,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "org.apache.commons.logging.Log",
+            "name": "warn"
+          }
+        },
+        "relationship": {
+          "identity": 8,
+          "start": 11,
+          "end": 9,
+          "type": "s_c",
+          "properties": {
+            "expected_state": "true",
+            "violation": "missing/condition/value_or_state",
+            "description":"a warning message is issued (`LOG.warn()`) without a prior  checking whether warning messages are enabled (`LOG.isWarnEnable()`)."
+          }
+        },
+        "end": {
+          "identity": 9,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "org.apache.commons.logging.Log",
+            "name": "isWarnEnabled"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 11,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "java.util.StringTokenizer",
+            "name": "nextToken"
+          }
+        },
+        "relationship": {
+          "identity": 8,
+          "start": 11,
+          "end": 9,
+          "type": "s_c",
+          "properties": {
+            "expected_state": "true",
+            "violation": "missing/condition/value_or_state",
+            "description":"`StringTokenizer.nextToken()` is invoked without prior check of   `hasMoreTokens()`. This usage may be safe from context, since the tokenized  value is an RBG color value which has a known number of tokens. However, the usage is unsafe against invalid values and we, therefore, consider it a  misuse."
+          }
+        },
+        "end": {
+          "identity": 9,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "java.util.StringTokenizer",
+            "name": "hasMoreTokens"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 11,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "com.itextpdf.text.pdf.PdfArray",
+            "name": "getPdfObject"
+          }
+        },
+        "relationship": {
+          "identity": 8,
+          "start": 11,
+          "end": 9,
+          "type": "s_c",
+          "properties": {
+            "expected_state": "false",
+            "violation": "missing/condition/null_check",
+            "description":" a `PdfObject` is fetched from a `PdfArray`. Since the array may contain a `null` value, the object should be checked before it is used."
+          }
+        },
+        "end": {
+          "identity": 9,
+          "labels": [
+            "variable"
+          ],
+          "properties": {
+            "className": "com.itextpdf.text.pdf.PdfObject",
+            "name": "null"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 11,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "com.itextpdf.text.pdf.PdfDictionary",
+            "name": "getAsString"
+          }
+        },
+        "relationship": {
+          "identity": 8,
+          "start": 11,
+          "end": 9,
+          "type": "s_c",
+          "properties": {
+            "expected_state": "false",
+            "violation": "missing/condition/null_check",
+            "description":":\"The method `PdfLayer.getAsString()` is invoked and the result is immediately converted `toUnicodeString()`,\n without checking whether it is `null`. From [the documentation og `getAsString()`]\n(http://itextsupport.com/apidocs/itext5/latest/com/itextpdf/text/pdf/PdfDictionary.html#getAsString-com.itextpdf.text.pdf.PdfName-)\n we take that this is unsafe:\\n  \\\"Returns a PdfObject as a PdfString, resolving indirect references. \nThe object associated with the PdfName given is retrieved and resolved to a direct object. \nIf it is a PdfString, it is cast down and returned as such. Otherwise null is returned.\\\""
+          }
+        },
+        "end": {
+          "identity": 9,
+          "labels": [
+            "variable"
+          ],
+          "properties": {
+            "className": "com.itextpdf.text.pdf.PdfString",
+            "name": "null"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 11,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "org.apache.jackrabbit.core.ItemData",
+            "name": "getState"
+          }
+        },
+        "relationship": {
+          "identity": 8,
+          "start": 11,
+          "end": 9,
+          "type": "s_c",
+          "properties": {
+            "expected_state": "false",
+            "violation": "missing/condition/null_check",
+            "description":"ItemData.getState() may be null."
+          }
+        },
+        "end": {
+          "identity": 9,
+          "labels": [
+            "variable"
+          ],
+          "properties": {
+            "className": "org.apache.jackrabbit.core.state.ItemState",
+            "name": "null"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 11,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "java.util.HashMap",
+            "name": "get"
+          }
+        },
+        "relationship": {
+          "identity": 8,
+          "start": 11,
+          "end": 9,
+          "type": "s_c",
+          "properties": {
+            "expected_state": "false",
+            "violation": "missing/condition/null_check",
+            "description":"Map.get() may return null."
+          }
+        },
+        "end": {
+          "identity": 9,
+          "labels": [
+            "variable"
+          ],
+          "properties": {
+            "className": "Object",
+            "name": "null"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 11,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "org.apache.jackrabbit.server.io.IOManager",
+            "name": "getDetector"
+          }
+        },
+        "relationship": {
+          "identity": 8,
+          "start": 11,
+          "end": 9,
+          "type": "s_c",
+          "properties": {
+            "expected_state": "false",
+            "violation": "missing/condition/null_check",
+            "description":"IOManager.getDetector() may return null."
+          }
+        },
+        "end": {
+          "identity": 9,
+          "labels": [
+            "variable"
+          ],
+          "properties": {
+            "className": "org.apache.tika.detect.Detector",
+            "name": "null"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 11,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "org.apache.jackrabbit.core.state.NodeState",
+            "name": "getParentId"
+          }
+        },
+        "relationship": {
+          "identity": 8,
+          "start": 11,
+          "end": 9,
+          "type": "s_c",
+          "properties": {
+            "expected_state": "false",
+            "violation": "missing/condition/null_check",
+            "description":"NodeState.getParentId() may return null and ItemStateManager.getItemState()\n  expects non-null parameter."
+          }
+        },
+        "end": {
+          "identity": 9,
+          "labels": [
+            "variable"
+          ],
+          "properties": {
+            "className": "org.apache.jackrabbit.core.NodeId",
+            "name": "null"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 11,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "org.apache.jackrabbit.jcr2spi.hierarchy.HierarchyEntry",
+            "name": "getParent"
+          }
+        },
+        "relationship": {
+          "identity": 8,
+          "start": 11,
+          "end": 9,
+          "type": "s_c",
+          "properties": {
+            "expected_state": "false",
+            "violation": "missing/condition/null_check",
+            "description":"HierarchyEntry.getParent() may return null."
+          }
+        },
+        "end": {
+          "identity": 9,
+          "labels": [
+            "variable"
+          ],
+          "properties": {
+            "className": "org.apache.jackrabbit.jcr2spi.hierarchy.NodeEntry",
+            "name": "null"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 11,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "org.apache.jackrabbit.core.fs.FileSystemResource",
+            "name": "delete"
+          }
+        },
+        "relationship": {
+          "identity": 8,
+          "start": 11,
+          "end": 9,
+          "type": "s_c",
+          "properties": {
+            "expected_state": "true",
+            "violation": "missing/condition/null_check",
+            "description":"ObjectPersistenceManager.destroy() calls FileSystemResource.delete()\n  (which delegates to FileSystem.deleteFile()) without checking FileSystemResource.fileExists()\n  (which delegates to FileSytem.fileExists()). FileSystem.deleteFile() throws, if\n  the file does not exist. A refactoring was performed in the course of the fix, to\n  remove duplication."
+          }
+        },
+        "end": {
+          "identity": 9,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "org.apache.jackrabbit.core.fs.FileSystemResource",
+            "name": "exists"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 11,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "org.jfree.chart.plot.PlotRenderingInfo",
+            "name": "getOwner"
+          }
+        },
+        "relationship": {
+          "identity": 8,
+          "start": 11,
+          "end": 9,
+          "type": "s_c",
+          "properties": {
+            "expected_state": "false",
+            "violation": "missing/condition/null_check",
+            "description":"PlotRenderingInfo.getOwner() may return null."
+          }
+        },
+        "end": {
+          "identity": 9,
+          "labels": [
+            "variable"
+          ],
+          "properties": {
+            "className": "org.jfree.chart.ChartRenderingInfo",
+            "name": "null"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 11,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "org.jfree.data.statistics.StatisticalCategoryDataset",
+            "name": "getMeanValue"
+          }
+        },
+        "relationship": {
+          "identity": 8,
+          "start": 11,
+          "end": 9,
+          "type": "s_c",
+          "properties": {
+            "expected_state": "false",
+            "violation": "missing/condition/null_check",
+            "description":"StatisticalCategoryDataset.getMeanValue() may return null."
+          }
+        },
+        "end": {
+          "identity": 9,
+          "labels": [
+            "variable"
+          ],
+          "properties": {
+            "className": "java.lang.Number",
+            "name": "null"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 11,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "org.jfree.data.statistics.StatisticalCategoryDataset",
+            "name": "getStdDevValue"
+          }
+        },
+        "relationship": {
+          "identity": 8,
+          "start": 11,
+          "end": 9,
+          "type": "s_c",
+          "properties": {
+            "expected_state": "false",
+            "violation": "missing/condition/null_check",
+            "description":"StatisticalCategoryDataset.getStDevValue() may return null."
+          }
+        },
+        "end": {
+          "identity": 9,
+          "labels": [
+            "variable"
+          ],
+          "properties": {
+            "className": "java.lang.Number",
+            "name": "null"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 11,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "org.jfree.chart.plot.XYPlot",
+            "name": "getRendererForDataset"
+          }
+        },
+        "relationship": {
+          "identity": 8,
+          "start": 11,
+          "end": 9,
+          "type": "s_c",
+          "properties": {
+            "expected_state": "false",
+            "violation": "missing/condition/null_check",
+            "description":"XYPlot.getRendererForDataset() may return null."
+          }
+        },
+        "end": {
+          "identity": 9,
+          "labels": [
+            "variable"
+          ],
+          "properties": {
+            "className": "org.jfree.chart.renderer.xy.XYItemRenderer",
+            "name": "null"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 11,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "org.jfree.chart.plot.CategoryPlot",
+            "name": "getDataset"
+          }
+        },
+        "relationship": {
+          "identity": 8,
+          "start": 11,
+          "end": 9,
+          "type": "s_c",
+          "properties": {
+            "expected_state": "false",
+            "violation": "missing/condition/null_check",
+            "description":"CategoryPlot.getDataset() may return null. The check for null was flipped."
+          }
+        },
+        "end": {
+          "identity": 9,
+          "labels": [
+            "variable"
+          ],
+          "properties": {
+            "className": "org.jfree.data.category.CategoryDataset",
+            "name": "null"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 11,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "java.util.Map",
+            "name": "get"
+          }
+        },
+        "relationship": {
+          "identity": 8,
+          "start": 11,
+          "end": 9,
+          "type": "s_c",
+          "properties": {
+            "expected_state": "false",
+            "violation": "missing/condition/null_check",
+            "description":"Map.get() may return null."
+          }
+        },
+        "end": {
+          "identity": 9,
+          "labels": [
+            "variable"
+          ],
+          "properties": {
+            "className": "java.util.ArrayList",
+            "name": "null"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 11,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "org.joda.time.contrib.hibernate.PersistentDateTime",
+            "name": "nullSafeGet"
+          }
+        },
+        "relationship": {
+          "identity": 8,
+          "start": 11,
+          "end": 9,
+          "type": "s_c",
+          "properties": {
+            "expected_state": "false",
+            "violation": "missing/condition/null_check",
+            "description":"  PersistentDateTime.nullSafeGet() may return null, while constructor\n  of Interval expects non-null parameters."
+          }
+        },
+        "end": {
+          "identity": 9,
+          "labels": [
+            "variable"
+          ],
+          "properties": {
+            "className": "org.joda.time.DateTime",
+            "name": "null"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 11,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "org.apache.lucene.index.MultiFields",
+            "name": "getDeletedDocs"
+          }
+        },
+        "relationship": {
+          "identity": 8,
+          "start": 11,
+          "end": 9,
+          "type": "s_c",
+          "properties": {
+            "expected_state": "false",
+            "violation": "missing/condition/null_check",
+            "description":"MultiFields.getDeletedDocs() may return null."
+          }
+        },
+        "end": {
+          "identity": 9,
+          "labels": [
+            "variable"
+          ],
+          "properties": {
+            "className": "org.apache.lucene.util.Bits",
+            "name": "null"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 11,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "java.lang.Object",
+            "name": "wait"
+          }
+        },
+        "relationship": {
+          "identity": 8,
+          "start": 11,
+          "end": 9,
+          "type": "s_c",
+          "properties": {
+            "expected_state": "true",
+            "violation": "missing/iteration",
+            "description":"Object.wait() should be called in a loop that iteratively checks the\n  condition waited for."
+          }
+        },
+        "end": {
+          "identity": 9,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "java.lang.Object",
+            "name": "isAvailable"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 11,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "java.util.Map",
+            "name": "put"
+          }
+        },
+        "relationship": {
+          "identity": 8,
+          "start": 11,
+          "end": 9,
+          "type": "s_c",
+          "properties": {
+            "expected_state": "false",
+            "violation": "missing/condition/value_or_state",
+            "description":"Checks the return value of Map.put() to check whether the key was set\n  before. If the Map allows null values, this usage breaks."
+          }
+        },
+        "end": {
+          "identity": 9,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "java.util.Map",
+            "name": "containsKey"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 11,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "com.google.gson.JsonElement",
+            "name": "getAsString"
+          }
+        },
+        "relationship": {
+          "identity": 8,
+          "start": 11,
+          "end": 9,
+          "type": "s_c",
+          "properties": {
+            "expected_state": "false",
+            "violation": "missing/condition/value_or_state",
+            "description":"Call JsonElement.getAsString() on JsonNullElement."
+          }
+        },
+        "end": {
+          "identity": 9,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "com.google.gson.JsonElement",
+            "name": "isJsonNull"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 11,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "java.util.Scanner",
+            "name": "next"
+          }
+        },
+        "relationship": {
+          "identity": 8,
+          "start": 11,
+          "end": 9,
+          "type": "s_c",
+          "properties": {
+            "expected_state": "true",
+            "violation": "missing/condition/value_or_state",
+            "description":"`scanner.next()` is called without checking if there are more elements. Because the scanner is built from the `JavaSource` parameter, which may be invalid "
+          }
+        },
+        "end": {
+          "identity": 9,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "java.util.Scanner",
+            "name": "hasNext"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 11,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "android.app.Dialog",
+            "name": "dismiss"
+          }
+        },
+        "relationship": {
+          "identity": 8,
+          "start": 11,
+          "end": 9,
+          "type": "s_c",
+          "properties": {
+            "expected_state": "true",
+            "violation": "missing/condition/value_or_state",
+            "description":"Calls Dialog.dismiss() on dialog that is not showing."
+          }
+        },
+        "end": {
+          "identity": 9,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "android.app.Dialog",
+            "name": "isShowing"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 11,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "android.app.ListFragment",
+            "name": "getListView"
+          }
+        },
+        "relationship": {
+          "identity": 8,
+          "start": 11,
+          "end": 9,
+          "type": "s_c",
+          "properties": {
+            "expected_state": "true",
+            "violation": "missing/condition/value_or_state",
+            "description":"Calls ListFragment.getListView() without checking that ListFragment.isAdded(), which might lead to crashes if the view is not yet initialized."
+          }
+        },
+        "end": {
+          "identity": 9,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "android.app.ListFragment",
+            "name": "isAdded"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  },
+  {
+    "segments": [
+      {
+        "start": {
+          "identity": 11,
+          "labels": [
+            "method"
+          ],
+          "properties": {
+            "className": "org.wordpress.android.util.WPEditText",
+            "name": "getText"
+          }
+        },
+        "relationship": {
+          "identity": 8,
+          "start": 11,
+          "end": 9,
+          "type": "s_c",
+          "properties": {
+            "expected_state": "false",
+            "violation": "missing/condition/null_check",
+            "description":"The result of WPEditText.getText() may be null."
+          }
+        },
+        "end": {
+          "identity": 9,
+          "labels": [
+            "variable"
+          ],
+          "properties": {
+            "className": "android.text.Editable",
+            "name": "null"
+          }
+        }
+      }
+    ],
+    "length": 1.0
+  }
+]

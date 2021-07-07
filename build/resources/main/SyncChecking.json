@@ -1,0 +1,37 @@
+[
+{
+  "segments": [
+    {
+      "start": {
+        "identity": 25,
+        "labels": [
+          "class"
+        ],
+        "properties": {
+          "className": "java.util.HashMap",
+          "name": "HashMap"
+        }
+      },
+      "relationship": {
+        "identity": 18,
+        "start": 25,
+        "end": 27,
+        "type": "sy_c",
+        "properties": {
+          "description":"Synchronizes on an object and then again on the same object within the synchroized bock, thereby, producing a deadlock."
+        }
+      },
+      "end": {
+        "identity": 27,
+        "labels": [
+          "method"
+        ],
+        "properties": {
+          "name": "synchronized()"
+        }
+      }
+    }
+  ],
+  "length": 1.0
+}
+]
